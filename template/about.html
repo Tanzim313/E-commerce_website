@@ -1,0 +1,63 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block banner_slider %}
+
+ <div id="carouselExampleslidesonly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+ 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+      <div class="carousel-item " >
+        <img src="{% static 'images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+      </div>
+
+    </div>
+  </div>
+
+{% endblock banner_slider %}
+
+
+{% block main-content %}
+
+<div class="container mt-3">
+  <br>
+  <h2 class="text-center">About Us</h2>
+  <br>
+
+  <div class="row container">
+    <p class="fs-4 text-center">
+        This is a public limited company having its registered and corporate office 
+        in the pure city of Maharashtra State in India. The company was incorporated in the year 
+        2018, and production commenced in 2020. 
+        It is one of the fastest-growing Public Listed Companies in Pune.
+    </p>
+  </div>
+  <br><br>
+
+  <h2 class="text-center">Mission</h2>
+  <br>
+  <div class="row container">
+    <p class="fs-4 text-center">
+        To embrace the right technology to delight our customers. 
+        Empowering the farmer community by understanding our customers' needs, 
+        creating high-quality products, and making them available through 
+        innovative and convenient channels.
+    </p>
+  </div>
+<br><br>
+</div>
+
+{% endblock main-content %}
